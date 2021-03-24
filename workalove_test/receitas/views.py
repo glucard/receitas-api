@@ -1,8 +1,6 @@
 from .models import Receita
 from .serializers import ReceitaSerializer, ReadOnlyReceitaSerializer
 from rest_framework import viewsets
-from rest_framework.authentication import SessionAuthentication, BasicAuthentication
-from rest_framework.permissions import IsAuthenticated
 
 class ReceitasViewSet(viewsets.ReadOnlyModelViewSet):
     """
